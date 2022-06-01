@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Training\\support-bank\\Support-Bank\\Support-Bank.csproj": {}
+    "C:\\Training\\SupportBank\\Support-Bank\\Support-Bank.csproj": {}
   },
   "projects": {
-    "C:\\Training\\support-bank\\Support-Bank\\Support-Bank.csproj": {
+    "C:\\Training\\SupportBank\\Support-Bank\\Support-Bank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Training\\support-bank\\Support-Bank\\Support-Bank.csproj",
+        "projectUniqueName": "C:\\Training\\SupportBank\\Support-Bank\\Support-Bank.csproj",
         "projectName": "Support-Bank",
-        "projectPath": "C:\\Training\\support-bank\\Support-Bank\\Support-Bank.csproj",
-        "packagesPath": "C:\\Users\\hanbis\\.nuget\\packages\\",
-        "outputPath": "C:\\Training\\support-bank\\Support-Bank\\obj\\",
+        "projectPath": "C:\\Training\\SupportBank\\Support-Bank\\Support-Bank.csproj",
+        "packagesPath": "C:\\Users\\olepel\\.nuget\\packages\\",
+        "outputPath": "C:\\Training\\SupportBank\\Support-Bank\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hanbis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\olepel\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

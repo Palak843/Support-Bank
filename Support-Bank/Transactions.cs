@@ -2,16 +2,15 @@ namespace SupportBank
 {
     class Transactions
     {
-
-        public string[]CreateTransactions(string date, string from, string to, string narrative, string amount)
+        public Transaction CreateTransaction(string date, string from, string to, string narrative, string amount)
         {
-            string[] transaction = {date, from, to, narrative, amount};
+            Transaction transaction = new Transaction(DateTime.Parse(date), from, to, narrative, decimal.Parse(amount));
             return transaction;
         }
 
-        public List<string[]> ReturnListOfTransactions(string User)
+        public List<Transaction> ReturnListOfTransactions(string User)
         {
-            List<string[]> AllUserTransactions = new List<string[]>();
+            List<Transaction> AllUserTransactions = new List<Transaction>();
             using (var reader = new StreamReader("Transactions2014.csv"))
             {
                 while (!reader.EndOfStream)
@@ -21,7 +20,7 @@ namespace SupportBank
                     var values = line.Split(',');
                     if (values[1] == User || values[2] == User)
                     {
-                        string[] listElement = CreateTransactions(values[0], values[1], values[2], values[3], values[4]);
+                        Transaction listElement = CreateTransaction(values[0], values[1], values[2], values[3], values[4]);
                         AllUserTransactions.Add(listElement);
                     }
                 }
