@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\palmit\\.nuget\\packages\\": {}
+    "C:\\Users\\hanbis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Training\\Support-Bank\\Support-Bank\\Support-Bank.csproj",
+      "projectUniqueName": "C:\\Training\\support-bank\\Support-Bank\\Support-Bank.csproj",
       "projectName": "Support-Bank",
-      "projectPath": "C:\\Training\\Support-Bank\\Support-Bank\\Support-Bank.csproj",
-      "packagesPath": "C:\\Users\\palmit\\.nuget\\packages\\",
-      "outputPath": "C:\\Training\\Support-Bank\\Support-Bank\\obj\\",
+      "projectPath": "C:\\Training\\support-bank\\Support-Bank\\Support-Bank.csproj",
+      "packagesPath": "C:\\Users\\hanbis\\.nuget\\packages\\",
+      "outputPath": "C:\\Training\\support-bank\\Support-Bank\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\palmit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\hanbis\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
