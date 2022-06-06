@@ -25,6 +25,7 @@ namespace SupportBank
                     }
                 }
             }
+
             return AllUserTransactions;
         }
     }

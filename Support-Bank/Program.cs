@@ -7,7 +7,7 @@
                 List<Transaction> userTransaction = transactions.ReturnListOfTransactions("Jon A");
                 foreach(var item in userTransaction)
                 {
-                    Console.WriteLine($"Date : {item.Date}, From : {item.From}, To : {item.To}, Description : {item.Narrative}, Amount : item.Amount");
+                    Console.WriteLine($"Date : {item.Date}, From : {item.From}, To : {item.To}, Description : {item.Narrative}, Amount : {item.Amount}");
                 }
             }
         }
