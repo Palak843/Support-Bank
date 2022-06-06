@@ -5,6 +5,7 @@ using System;
 
     namespace SupportBank {
         public class Program {
+            private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
             public static void Main (String[] args)
             {
                 var config = new LoggingConfiguration();
@@ -13,16 +14,41 @@ using System;
                 config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
                 LogManager.Configuration = config;
 
-                Transactions transactions = new Transactions();
-                List<Transaction> userTransaction = transactions.ReturnListOfTransactions("Sarah T");
-                foreach(var item in userTransaction)
+                Console.WriteLine("Do you want to see a summary of everyones statements?");
+                string? listAll = Console.ReadLine();
+                if (listAll == "yes")
                 {
-                    Console.WriteLine($"Date : {item.Date}, From : {item.From}, To : {item.To}, Description : {item.Narrative}, Amount : {item.Amount}");
+                    TotalMoney allTransactions = new TotalMoney();
+                    allTransactions.CreateUserTotalMoney();
                 }
 
-                TotalMoney allTransactions = new TotalMoney();
-                allTransactions.CreateUserTotalMoney();
-                
+                string? username = "";
+                Transactions transactions = new Transactions();
+                while (username != null)
+                {
+                    try
+                    {
+                        Console.WriteLine("Whose transactions would you like to see?");
+                        username = Console.ReadLine();
+                        List<Transaction> userTransaction = transactions.ReturnListOfTransactions(username);
+                        if (userTransaction.Count == 0)
+                        {
+                            throw new ArgumentNullException();
+                        }
+                       
+                        foreach(var item in userTransaction)
+                        {
+                            Console.WriteLine($"Date : {item.Date}, From : {item.From}, To : {item.To}, Description : {item.Narrative}, Amount : {item.Amount}");
+                        }
+                    }
+                    catch (ArgumentNullException exception)
+                    {
+                        Console.WriteLine("There is no person with this name.");
+                        Logger.Error($"The user submitted name {username} which is not on file.");
+                        continue;
+                    }
+                    break;
+                }
             }
         }
     }
