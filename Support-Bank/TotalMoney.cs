@@ -6,13 +6,22 @@ namespace SupportBank
         
         public Dictionary <string,decimal> CreateUserTotalMoney()
         {
-            using (var reader = new StreamReader("Transactions2014.csv"))
+            using (var reader = new StreamReader("DodgyTransactions2015.csv"))
             {
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
                     if (line == null) continue;
                     var values = line.Split(',');
+                    try
+                        {
+                           decimal passAmount = decimal.Parse(values[4]);
+                        }
+                        catch (FormatException exception)
+                        {
+                            Console.WriteLine($"The transaction from {values[1]} to {values[2]} on date {values[0]} has invalid amount.");
+                            continue;
+                        }
                     if (!UserTotalMoney.ContainsKey(values[1]))
                     {
                         UserTotalMoney.Add(values[1], decimal.Parse(values[4]) * -1);;
@@ -33,7 +42,8 @@ namespace SupportBank
             }
             foreach(KeyValuePair<string, decimal> entry in UserTotalMoney)
             {
-                Console.WriteLine(entry);
+                var textColor = entry.Value >=0 ? Console.ForegroundColor=ConsoleColor.Green : Console.ForegroundColor=ConsoleColor.Red;
+                Console.WriteLine($"{entry.Key} ballance is £{entry.Value}");
             }
 
             return UserTotalMoney;
