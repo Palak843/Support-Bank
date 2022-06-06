@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Training\\support-bank\\support-bank\\Support-Bank.csproj": {}
+    "C:\\Training\\Support-Bank\\Support-Bank\\Support-Bank.csproj": {}
   },
   "projects": {
-    "C:\\Training\\support-bank\\support-bank\\Support-Bank.csproj": {
+    "C:\\Training\\Support-Bank\\Support-Bank\\Support-Bank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Training\\support-bank\\support-bank\\Support-Bank.csproj",
+        "projectUniqueName": "C:\\Training\\Support-Bank\\Support-Bank\\Support-Bank.csproj",
         "projectName": "Support-Bank",
-        "projectPath": "C:\\Training\\support-bank\\support-bank\\Support-Bank.csproj",
-        "packagesPath": "C:\\Users\\hanbis\\.nuget\\packages\\",
-        "outputPath": "C:\\Training\\support-bank\\support-bank\\obj\\",
+        "projectPath": "C:\\Training\\Support-Bank\\Support-Bank\\Support-Bank.csproj",
+        "packagesPath": "C:\\Users\\palmit\\.nuget\\packages\\",
+        "outputPath": "C:\\Training\\Support-Bank\\Support-Bank\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hanbis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\palmit\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Nlog": {
               "target": "Package",
               "version": "[5.0.0, )"

@@ -1,10 +1,11 @@
 using NLog;
 using NLog.Config;
 using NLog.Targets;
+using Newtonsoft.Json;
 namespace SupportBank
 {
     
-    class Transactions
+    class TransactionsJson
     {
         private readonly ILogger Logger = LogManager.GetCurrentClassLogger();
         public Transaction CreateTransaction(string date, string from, string to, string narrative, string amount)
@@ -16,9 +17,11 @@ namespace SupportBank
 
         public List<Transaction> ReturnListOfTransactions(string User)
         {
+            StreamReader reader = new StreamReader("Transactions2013.json"); 
+            string jsonString = reader.ReadToEnd(); 
+            List<Transaction>? transactionsJson = JsonConvert.DeserializeObject<List<Transaction>>(jsonString);
+            
             List<Transaction> AllUserTransactions = new List<Transaction>();
-            using (var reader = new StreamReader("DodgyTransactions2015.csv"))
-
             {
                 while (!reader.EndOfStream)
                 {
