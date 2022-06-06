@@ -1,7 +1,11 @@
+using NLog;
+using NLog.Config;
+using NLog.Targets;
 namespace SupportBank
 {
     class TotalMoney
     {
+        private readonly ILogger Logger = LogManager.GetCurrentClassLogger();
         public Dictionary <string,decimal> UserTotalMoney {get; set;} = new Dictionary<string, decimal>();
         
         public Dictionary <string,decimal> CreateUserTotalMoney()
@@ -20,6 +24,7 @@ namespace SupportBank
                         catch (FormatException exception)
                         {
                             Console.WriteLine($"The transaction from {values[1]} to {values[2]} on date {values[0]} has invalid amount.");
+                            Logger.Error($"The transaction from {values[1]} to {values[2]} on date {values[0]} has invalid amount.");
                             continue;
                         }
                     if (!UserTotalMoney.ContainsKey(values[1]))
@@ -45,7 +50,7 @@ namespace SupportBank
                 var textColor = entry.Value >=0 ? Console.ForegroundColor=ConsoleColor.Green : Console.ForegroundColor=ConsoleColor.Red;
                 Console.WriteLine($"{entry.Key} ballance is £{entry.Value}");
             }
-
+            Console.ResetColor();
             return UserTotalMoney;
             }
         }

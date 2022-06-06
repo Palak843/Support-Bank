@@ -1,7 +1,12 @@
+using NLog;
+using NLog.Config;
+using NLog.Targets;
 namespace SupportBank
 {
+    
     class Transactions
     {
+        private readonly ILogger Logger = LogManager.GetCurrentClassLogger();
         public Transaction CreateTransaction(string date, string from, string to, string narrative, string amount)
         {
 
@@ -28,6 +33,7 @@ namespace SupportBank
                         catch (FormatException exception)
                         {
                             Console.WriteLine($"The transaction from {values[1]} to {values[2]} with the reference \"{values[3]}\" has invalid date.");
+                           Logger.Error($"The transaction from {values[1]} to {values[2]} with the reference \"{values[3]}\" has invalid date.");
                             continue;
                         }
                         try
@@ -37,6 +43,7 @@ namespace SupportBank
                         catch (FormatException exception)
                         {
                             Console.WriteLine($"The transaction from {values[1]} to {values[2]} on date {values[0]} has invalid amount.");
+                            Logger.Error($"The transaction from {values[1]} to {values[2]} on date {values[0]} has invalid amount.");
                             continue;
                         }
                         Transaction listElement = CreateTransaction(values[0], values[1], values[2], values[3], values[4]);

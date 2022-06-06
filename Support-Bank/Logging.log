@@ -1,0 +1,4 @@
+2022-06-06 12:22:00.9072 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-06 12:23:26.8264 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-06 12:25:36.7663 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-06 12:25:36.7963 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
