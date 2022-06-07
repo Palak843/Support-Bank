@@ -82,19 +82,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\palmit\\.nuget\\packages\\": {}
+    "C:\\Users\\olepel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Training\\Support-Bank\\Support-Bank\\Support-Bank.csproj",
+      "projectUniqueName": "C:\\Training\\SupportBank\\Support-Bank\\Support-Bank.csproj",
       "projectName": "Support-Bank",
-      "projectPath": "C:\\Training\\Support-Bank\\Support-Bank\\Support-Bank.csproj",
-      "packagesPath": "C:\\Users\\palmit\\.nuget\\packages\\",
-      "outputPath": "C:\\Training\\Support-Bank\\Support-Bank\\obj\\",
+      "projectPath": "C:\\Training\\SupportBank\\Support-Bank\\Support-Bank.csproj",
+      "packagesPath": "C:\\Users\\olepel\\.nuget\\packages\\",
+      "outputPath": "C:\\Training\\SupportBank\\Support-Bank\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\palmit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\olepel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
