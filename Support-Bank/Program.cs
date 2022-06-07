@@ -49,6 +49,34 @@ using System;
                     }
                     break;
                 }
+                TransactionsJson transactionsJson = new TransactionsJson();
+                
+                 while (username != null)
+                {
+                    try
+                    {
+                        Console.WriteLine("Whose transactions would you like to see?");
+                        username = Console.ReadLine();
+                        List<TransactionJson> userTransactionJson = transactionsJson.ReturnListOfTransactions(username);
+                        if (userTransactionJson.Count == 0)
+                        {
+                            throw new ArgumentNullException();
+                        }
+                       
+                        foreach(var item in userTransactionJson)
+                        {
+                            Console.WriteLine($"Date : {item.Date}, From : {item.FromAccount}, To : {item.ToAccount}, Description : {item.Narrative}, Amount : {item.Amount}");
+                        }
+                    }
+                    catch (ArgumentNullException exception)
+                    {
+                        Console.WriteLine("There is no person with this name.");
+                        Logger.Error($"The user submitted name {username} which is not on file.");
+                        continue;
+                    }
+                    break;
+                }
+
             }
         }
     }

@@ -30,3 +30,4 @@ C:\Training\SupportBank\Support-Bank\obj\Debug\net6.0\Support-Bank.genruntimecon
 C:\Training\SupportBank\Support-Bank\obj\Debug\net6.0\ref\Support-Bank.dll
 C:\Training\Support-Bank\Support-Bank\bin\Debug\net6.0\NLog.dll
 C:\Training\Support-Bank\Support-Bank\obj\Debug\net6.0\Support-Bank.csproj.CopyComplete
+C:\Training\Support-Bank\Support-Bank\bin\Debug\net6.0\Newtonsoft.Json.dll

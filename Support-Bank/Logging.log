@@ -10412,3 +10412,40 @@
 2022-06-06 14:20:11.1616 Error - SupportBank.Program: The user submitted name hannah which is not on file.
 2022-06-06 14:20:15.8616 Error - SupportBank.Transactions: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
 2022-06-06 14:20:58.2741 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:05:45.6488 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:05:59.7138 Error - SupportBank.Program: The user submitted name John A which is not on file.
+2022-06-07 11:06:15.9059 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:10:01.8281 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:10:06.7225 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:24:46.8126 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:24:52.3467 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:25:05.6869 Error - SupportBank.Program: The user submitted name Sam which is not on file.
+2022-06-07 11:25:10.9425 Error - SupportBank.Program: The user submitted name Dan W which is not on file.
+2022-06-07 11:35:07.8578 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:35:12.8026 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:35:20.1019 Error - SupportBank.Program: The user submitted name Dan W which is not on file.
+2022-06-07 11:35:52.8837 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:35:56.3666 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:36:01.8682 Error - SupportBank.Program: The user submitted name Sam N which is not on file.
+2022-06-07 11:41:26.4923 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:41:32.2716 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:41:41.2482 Error - SupportBank.Program: The user submitted name Dan W which is not on file.
+2022-06-07 11:43:46.1599 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:43:54.3935 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:43:59.8992 Error - SupportBank.Program: The user submitted name Dan W which is not on file.
+2022-06-07 11:44:18.1107 Error - SupportBank.Program: The user submitted name Chris W which is not on file.
+2022-06-07 11:46:20.5199 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:46:26.8922 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:46:32.6113 Error - SupportBank.Program: The user submitted name Chris W which is not on file.
+2022-06-07 11:47:28.2251 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:47:35.7940 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:47:42.2399 Error - SupportBank.Program: The user submitted name Sam N which is not on file.
+2022-06-07 11:48:19.1113 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:48:26.6805 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:48:32.8077 Error - SupportBank.Program: The user submitted name Sam N which is not on file.
+2022-06-07 11:51:46.8491 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:51:52.6074 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:51:58.1791 Error - SupportBank.Program: The user submitted name Dan W which is not on file.
+2022-06-07 11:56:43.5244 Error - SupportBank.TotalMoney: The transaction from Ben B to Sam N on date 01/03/2015 has invalid amount.
+2022-06-07 11:56:51.2176 Error - SupportBank.Transactions: The transaction from Sarah T to Dan W with the reference "Beers" has invalid date.
+2022-06-07 11:56:56.5811 Error - SupportBank.Program: The user submitted name Dan W which is not on file.
